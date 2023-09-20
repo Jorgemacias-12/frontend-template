@@ -1,38 +1,40 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Frontend Template
 
-## Getting Started
+Este es un proyecto de plantilla para desarrollar aplicaciones frontend utilizando Next.js. Aquí encontrarás una breve descripción de los archivos que puedes encontrar en este proyecto y para qué sirven.
 
-First, run the development server:
+## Archivos en el Proyecto
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+### `pages/`
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+En el directorio `pages/`, encontrarás los archivos JavaScript o TypeScript que representan las páginas de tu aplicación. Cada archivo en este directorio corresponde a una ruta de URL en tu sitio web. Por ejemplo, `pages/index.js` representa la página principal de tu sitio.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+### `components/`
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+El directorio `components/` es donde puedes colocar componentes reutilizables que se utilizan en varias partes de tu aplicación. Estos componentes pueden ser botones, barras de navegación, formularios, etc.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### `styles/`
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+En el directorio `styles/`, puedes agregar archivos de hojas de estilo CSS o SASS para dar estilo a tus componentes y páginas. Estos estilos se pueden importar y aplicar en tus componentes y páginas.
 
-## Learn More
+### `public/`
 
-To learn more about Next.js, take a look at the following resources:
+El directorio `public/` es donde puedes colocar archivos estáticos, como imágenes o archivos de datos, que se pueden servir directamente al navegador. Puedes acceder a estos archivos utilizando la URL relativa `/`.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### `utils/`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Si necesitas funciones de utilidad o lógica compartida en tu aplicación, puedes colocarlas en el directorio `utils/`. Esto puede ayudar a mantener tu código más organizado y modular.
 
-## Deploy on Vercel
+### `package.json` y `package-lock.json`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Estos archivos son parte de la configuración de tu proyecto Node.js. `package.json` contiene información sobre las dependencias de tu proyecto y scripts para tareas como iniciar la aplicación. `package-lock.json` es un archivo de bloqueo que registra las versiones exactas de las dependencias para garantizar la reproducibilidad de tu proyecto.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Cómo Empezar
+
+1. Clona este repositorio en tu máquina local.
+2. Ejecuta `npm install` para instalar las dependencias del proyecto.
+3. Utiliza `npm run dev` para iniciar el servidor de desarrollo Next.js.
+4. Abre tu navegador y ve a `http://localhost:3000` para ver tu aplicación en funcionamiento.
+
+¡Listo! Ahora puedes comenzar a desarrollar tu aplicación frontend utilizando esta plantilla de Next.js.
+
+¡Diviértete codificando!
